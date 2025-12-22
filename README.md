@@ -23,32 +23,8 @@ Repository layout (scaffold)
 - yocto_meta/        → meta-adas layer, recipes-adas (Yocto recipes)
 - docs/              → diagrams, wiring, demo notes, changelog
 
-What I committed here
----------------------
-- README.md (this file)
-- .gitignore
-- LICENSE (MIT)
-- repository skeleton folders
 
-How to publish to GitHub (recommended)
--------------------------------------
-1. Create a new repository on GitHub under your account (e.g. github.com/azizzr02/adas-realtime-can).
-2. Locally, add the real project files to the folders above (or copy full paths):
-   - STM32 project: /home/aziz/stm32/adas_motor
-   - ADAS app: /home/aziz/yocto/layers/meta-adas/recipes-adas/adas-app/files/
-   - Pi CAN server & init scripts: /home/aziz/yocto/layers/meta-adas/
-   - Yocto layer: /home/aziz/yocto/layers/meta-adas
-3. Add remote and push:
 
-   git remote add origin https://github.com/azizzr02/REPO_NAME.git
-   git branch -M main
-   git push -u origin main
-
-Notes
------
-- Replace REPO_NAME with the repository name you create on GitHub.
-- If you prefer SSH, use the SSH remote URL instead of HTTPS and ensure your SSH key is added to GitHub.
-- Remove any sensitive data (password hashes, private keys) before pushing. The Yocto image's /etc/passwd example contains a hashed password — remove or sanitize it.
 
 Contact
 -------
