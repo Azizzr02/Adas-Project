@@ -1,0 +1,10 @@
+# This bbappend prevents man-db postinstall issues
+# by removing the intercept hook
+
+do_rootfs[postfuncs] += "remove_mandb_hook"
+
+remove_mandb_hook() {
+    rm -f ${IMAGE_ROOTFS}/etc/rpm/sysimage/Packages
+    rm -rf ${WORKDIR}/intercept_scripts/update_mandb*
+    rm -f ${STAGING_DIR_NATIVE}/usr/share/postinst-intercepts/update_mandb
+}

@@ -1,0 +1,10 @@
+# Disable problematic man-db intercept hook globally
+PACKAGE_INSTALL:remove = "man-db"
+ROOTFS_PKGMANAGE_BOOTSTRAP:remove = "run-postinsts"
+
+# Remove the intercept hook script
+do_rootfs[prefuncs] += "remove_mandb_intercept"
+
+remove_mandb_intercept() {
+    rm -f ${STAGING_DIR_NATIVE}/usr/share/postinst-intercepts/update_mandb
+}
