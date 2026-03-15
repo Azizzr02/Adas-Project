@@ -3,7 +3,7 @@ Real‑Time ADAS with CAN Communication and Motor Control
 
 Short overview
 --------------
-This project demonstrates an end-to-end Advanced Driver Assistance System (ADAS) that integrates computer vision inference (YOLOP), embedded Linux (Yocto) with CAN support, a Raspberry Pi CAN gateway, and an STM32-based real-time motor controller. The system implements autonomous emergency braking by mapping vision-derived distance measurements to motor PWM commands sent over a CAN bus.
+This project demonstrates an end-to-end Advanced Driver Assistance System (ADAS) that integrates computer vision inference (YOLOP), embedded Linux (Yocto) with CAN support, a Raspberry Pi CAN gateway, and an STM32-based real-time motor controller. The system implements autonomous emergency braking by mapping vision-derived distance measurements to motor PWM commands sent over a CAN bus.Check this link for a video Description : https://www.linkedin.com/posts/aziz-zouari_adas-autonomousvehicles-embeddedsystems-activity-7408880455871049728-kYnw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEUbiZABfS1t5to2wDJqG505PlvHZFRtQac
 
 Quick architecture
 ------------------
